@@ -26,15 +26,15 @@ if __name__ == '__main__':
     print("Please keep the program running when installing the servos.")
     print("After that, you can press ctrl-C to end the program.")
     S=Servo()
+    try:
+        for i in range(16):
+            print(f'Setting servo {i}')
+            S.setServoAngle(i,90)
+            print(f'Successfull set servo {i} to 90deg')
+    except KeyboardInterrupt:
+        print ("\nEnd of program")
+        break
     while True:
-        try:
-            for i in range(16):
-                print(f'Setting servo {i}')
-                S.setServoAngle(i,90)
-                print(f'Successfull set servo {i} to 90deg')
-        except KeyboardInterrupt:
-            print ("\nEnd of program")
-            break
         pass
 
            
