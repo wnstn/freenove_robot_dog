@@ -31,7 +31,8 @@ if __name__ == '__main__':
     for i in range(16):
         print(f'Setting servo {i}')
         S.setServoAngle(i,90)
-        print(f'Successfull set servo {i} to 90deg')
+        print(f'Successfully set servo {i} to 90deg')
+
     while True:
         try:
             pass
