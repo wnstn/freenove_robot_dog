@@ -31,10 +31,10 @@ if __name__ == '__main__':
             print(f'Setting servo {i}')
             S.setServoAngle(i,90)
             print(f'Successfull set servo {i} to 90deg')
-        except KeyboardInterrupt:
-            print ("\nEnd of program")
     while True:
         pass
+        except KeyboardInterrupt:
+            print ("\nEnd of program")
 
            
         
