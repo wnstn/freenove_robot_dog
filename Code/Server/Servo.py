@@ -32,6 +32,8 @@ if __name__ == '__main__':
         print(f'Setting servo {i}')
         S.setServoAngle(i,90)
         print(f'Successfully set servo {i} to 90deg')
+    
+    exit()
 
            
         
